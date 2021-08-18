@@ -28,8 +28,9 @@ if __name__ == '__main__':
     
     # define controller. 
     # controller = LQController(plant, Q, R)
-    controller = PIDController(plant)
+    # controller = PIDController(plant)
     # controller = Controller()
+    controller = MPCController(plant)
     
     # create kalman state observer object
     kalman_observer = KalmanStateObserver( plant )
@@ -65,5 +66,5 @@ if __name__ == '__main__':
     ylabel( 'u' )
     legend(loc=2, numpoints=1)
     grid()
-    
+    # savefig('Images/MPC.png')
     show()

@@ -62,7 +62,7 @@ class SimEnv( object ):
                 xhat[:,k+1] = (np.linalg.inv(self.system.C) * self.system.measure_outputs() ).ravel()
 
             if( k > 9):
-                sp = 1.0
+                sp = u[:,k] - sp / k
             setpoint[:, k] = sp
                 
         return SimulationResults(xhat, u, y, self.system.Ts, setpoint)

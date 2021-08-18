@@ -115,3 +115,16 @@ Output Variables: When we want to conduct output regulation (and not state regul
 # Systems
 
 contains classes used to describe discrete time systems.
+
+# Visualisation 
+
+## LQR controller
+
+![](Images/LQR.png)
+
+## PID controller
+
+![](Images/PID.png)
+
+## MPC controller
+![](Images/MPC.png)
